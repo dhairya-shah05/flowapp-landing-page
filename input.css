@@ -39,17 +39,17 @@
 
         0%,
         100% {
-            border-radius: 75% 76% 70% 79%;
+            border-radius: 65% 76% 60% 79%;
             transform: rotate(45deg);
         }
 
         25% {
-            border-radius: 90% 80% 86% 85%;
+            border-radius: 69% 80% 66% 85%;
             transform: rotate(90deg);
         }
 
         50% {
-            border-radius: 79% 76% 78% 80%;
+            border-radius: 79% 76% 78% 60%;
             transform: rotate(135deg);
         }
 
