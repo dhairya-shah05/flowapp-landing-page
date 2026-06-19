@@ -1,1 +1,61 @@
 @import "tailwindcss";
+
+@theme {
+    --animate-float: float 3s ease-in-out infinite;
+
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+@theme {
+    --animate-slide-up: slide-up 0.8s ease forwards;
+
+    @keyframes slide-up {
+        from {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+@theme {
+    --animate-morphing-blob: morph 10s ease-in-out infinite;
+
+    @keyframes morph {
+
+        0%,
+        100% {
+            border-radius: 65% 76% 60% 79%;
+            transform: rotate(45deg);
+        }
+
+        25% {
+            border-radius: 69% 80% 66% 85%;
+            transform: rotate(90deg);
+        }
+
+        50% {
+            border-radius: 79% 76% 78% 60%;
+            transform: rotate(135deg);
+        }
+
+        75% {
+            border-radius: 90% 80% 86% 85%;
+            transform: rotate(180%);
+        }
+    }
+}
