@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
-<body class="w-full overflow-x-hidden bg-gray-700 box-border">
+<body class="w-screen overflow-x-hidden bg-gray-700 box-border">
     <div
         class="fixed inset-0 -z-50 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-size-[70px_70px]">
     </div>
@@ -41,10 +41,34 @@
                 </div>
             </div>
 
-            <button class="md:hidden text-2xl text-white">
-                ☰
+            <button class="md:hidden text-2xl text-white" id="menu-btn">
+                <i class="ri-menu-line"></i>
             </button>
         </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden mx-5 mt-2 rounded-xl bg-white/10 backdrop-blur-md border border-white/20">
+            <ul class="flex flex-col text-white">
+                <li>
+                    <a href="#features" class="block px-5 py-4 hover:bg-white/10 self-center">
+                        Features
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block px-5 py-4 hover:bg-white/10">
+                        Pricing
+                    </a>
+                </li>
+                <li>
+                    <a href="#testimonials" class="block px-5 py-4 hover:bg-white/10">
+                        Reviews
+                    </a>
+                </li>
+                <li class="p-5">
+                    <button class="w-full py-3 rounded-xl bg-gradient-to-r from-blue-500 to-purple-500 text-white">Get
+                        Started</button>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main>
@@ -69,7 +93,7 @@
                         <h1
                             class="text-4xl mb:text-5xl lg:text-6xl mb-5 text-white font-bold xl:text-7xl animate-slide-up">
                             Build products <span class="text-blue-500">users love</span></h1>
-                        <p class="mt-5 text-white text-md lg:text-2xl mb-5">The all-in-one platform for teams to
+                        <p class="mt-5 text-white text-md lg:text-2xl mb-5 animate-slide-up delay-1000">The all-in-one platform for teams to
                             collaborate, design, and ship amazing products 10x
                             faster.</p>
                     </div>
@@ -87,7 +111,7 @@
                                 name="play-circle-sharp" class="mr-2 text-xl"></ion-icon>Watch Demo</button>
                     </div>
 
-                    <div class="flex items-center gap-10 mt-5">
+                    <div class="flex items-center gap-5 mt-5">
                         <div class="relative w-32 h-10">
                             <img src="images/person 1.jpg" alt=""
                                 class="size-9 rounded-full bg-cover hover:scale-110 hover:z-10 absolute transition-all duration-300">
@@ -342,7 +366,7 @@
                             class="bg-white/20 backdrop-blur-xl py-4 px-5 text-white rounded-lg border-[2px] border-white/30 hover:bg-white/30 transition-all duration-300">Schedule
                             Demo</button>
                     </div>
-                    <p class="flex items-center gap-2 text-white">No credit card required <ion-icon name="ellipse"
+                    <p class="flex items-center gap-1 text-white">No credit card required <ion-icon name="ellipse"
                             class="size-2 text-white"></ion-icon> 14-day free trial <ion-icon name="ellipse"
                             class="size-2 text-white"></ion-icon> Cancel anytime</p>
                 </div>
@@ -353,39 +377,44 @@
     <footer class="bg-gray-900 py-10 h-auto w-full flex flex-col items-center px-5">
         <div class="max-w-7xl">
             <div class="grid grid-rows-2 lg:grid-rows-none grid-cols-3 lg:grid-cols-4 gap-5 ">
-                <div class="flex flex-col col-span-3 lg:col-span-1 items-center gap-5">
-                    <h3 class="text-white text-xl font-bold lg:self-start"><span class="size-12 p-2 rounded-lg mr-2 text-xl bg-gradient-to-br from-blue-400 to-purple-500 animate-pulse">⚡</span>FlowApp</h3>
+                <div class="flex flex-col col-span-3 lg:col-span-1 items-center gap-5 mb-10 lg:mb-0">
+                    <h3 class="text-white text-xl font-bold lg:self-start"><span
+                            class="size-12 p-2 rounded-lg mr-2 text-xl bg-gradient-to-br from-blue-400 to-purple-500 animate-pulse">⚡</span>FlowApp
+                    </h3>
                     <p class="text-white ">Build better products faster with all-in-one platforms for modern teams.</p>
                     <div class="lg:self-start flex gap-3">
-                        <i class="size-10 p-2 rounded-md bg-gray-400/30 text-xl text-center hover:bg-gray-400/50 transition-bg duration-300 text-white ri-twitter-x-fill"></i>
-                        <i class="size-10 p-2 rounded-md bg-gray-400/30 text-xl text-center hover:bg-gray-400/50 transition-bg duration-300 text-white ri-linkedin-fill"></i>
-                        <i class="size-10 p-2 rounded-md bg-gray-400/30 text-xl text-center hover:bg-gray-400/50 transition-bg duration-300 text-white ri-youtube-fill"></i>
+                        <i
+                            class="size-10 p-2 rounded-md bg-gray-400/30 text-xl text-center hover:bg-gray-400/50 transition-bg duration-300 text-white ri-twitter-x-fill"></i>
+                        <i
+                            class="size-10 p-2 rounded-md bg-gray-400/30 text-xl text-center hover:bg-gray-400/50 transition-bg duration-300 text-white ri-linkedin-fill"></i>
+                        <i
+                            class="size-10 p-2 rounded-md bg-gray-400/30 text-xl text-center hover:bg-gray-400/50 transition-bg duration-300 text-white ri-youtube-fill"></i>
                     </div>
                 </div>
                 <div class="flex flex-col gap-3 items-center">
                     <h3 class="text-white text-xl font-bold">Product</h3>
                     <ul class="flex flex-col gap-2 items-center">
-                        <li class="text-white">Features</li>
-                        <li class="text-white">Pricing</li>
-                        <li class="text-white">Integrations</li>
-                        <li class="text-white">Changelogs</li>
+                        <li class="group hover:scale-105 transition-text duration-200"><a href="#features" class="text-gray-300 group-hover:text-white transition-text">Features</a></li>
+                        <li class="group hover:scale-105 transition-text duration-200"><a href="#" class="text-gray-300 group-hover:text-white transition-text">Pricing</a></li>
+                        <li class="group hover:scale-105 transition-text duration-200"><a href="#" class="text-gray-300 group-hover:text-white transition-text">Integrations</a></li>
+                        <li class="group hover:scale-105 transition-text duration-200"><a href="#" class="text-gray-300 group-hover:text-white transition-text">Changelogs</a></li>
                     </ul>
                 </div>
                 <div class="flex flex-col gap-3 items-center">
                     <h3 class="text-white text-xl font-bold">Company</h3>
                     <ul class="flex flex-col gap-2 items-center">
-                        <li class="text-white">About</li>
-                        <li class="text-white">Blogs</li>
-                        <li class="text-white">Careers</li>
-                        <li class="text-white">Press</li>
+                        <li class="group hover:scale-105 transition-text duration-200"><a href="#" class="text-gray-300 group-hover:text-white transition-text">About</a></li>
+                        <li class="group hover:scale-105 transition-text duration-200"><a href="#" class="text-gray-300 group-hover:text-white transition-text">Blogs</a></li>
+                        <li class="group hover:scale-105 transition-text duration-200"><a href="#" class="text-gray-300 group-hover:text-white transition-text">Careers</a></li>
+                        <li class="group hover:scale-105 transition-text duration-200"><a href="#" class="text-gray-300 group-hover:text-white transition-text">Press</a></li>
                     </ul>
                 </div>
                 <div class="flex flex-col gap-3 items-center">
                     <h3 class="text-white text-xl font-bold">Legal</h3>
                     <ul class="flex flex-col gap-2 items-center">
-                        <li class="text-white">Privacy</li>
-                        <li class="text-white">Ternms</li>
-                        <li class="text-white">Security</li>
+                        <li class="group hover:scale-105 transition-text duration-200"><a href="#" class="text-gray-300 group-hover:text-white transition-text">Privacy</a></li>
+                        <li class="group hover:scale-105 transition-text duration-200"><a href="#" class="text-gray-300 group-hover:text-white transition-text">Ternms</a></li>
+                        <li class="group hover:scale-105 transition-text duration-200"><a href="#" class="text-gray-300 group-hover:text-white transition-text">Security</a></li>
                     </ul>
                 </div>
 
@@ -397,6 +426,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 </body>
