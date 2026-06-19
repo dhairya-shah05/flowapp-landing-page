@@ -25,11 +25,11 @@
 
             <div class="md:flex gap-4 items-center hidden">
                 <ul class="flex gap-6 text-white">
-                    <li><a href="#"
+                    <li><a href="#features"
                             class="hover:bg-white/20 py-2 px-3 rounded-xl transition-all duration-300">Features</a></li>
                     <li><a href="#"
                             class="hover:bg-white/20 py-2 px-3 rounded-xl transition-all duration-300">Pricing</a></li>
-                    <li><a href="#"
+                    <li><a href="#testimonials"
                             class="hover:bg-white/20 py-2 px-3 rounded-xl transition-all duration-300">Reviews</a></li>
                 </ul>
 
@@ -47,12 +47,12 @@
         </nav>
     </header>
 
-    <main class="">
+    <main>
         <section
-            class="max-w-7xl pt-36 lg:pt-0 relative mx-auto items-center min-h-screen px-5 flex flex-col justify-center lg:px-10">
+            class="max-w-7xl pt-36 lg:pt-0 relative mx-auto items-center min-h-screen px-5 flex flex-col justify-center lg:px-0">
 
             <div
-                class="absolute top-1/2 left-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-blue-300/60 to-purple-300/50 -translate-x-1/2 -translate-y-1/2 animate-morphing-blob -z-10">
+                class="absolute top-1/2 left-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-blue-300/80 to-purple-300/80 -translate-x-1/2 -translate-y-1/2 animate-morphing-blob -z-10">
             </div>
             <div class="flex flex-col justify-center items-center gap-10 lg:flex-row">
                 <div class="flex-1">
@@ -154,7 +154,7 @@
             </div>
         </section>
 
-        <section
+        <section id="features"
             class="w-full mt-10 px-5 flex flex-col h-auto items-center justify-center py-10 bg-gradient-to-b from-gray-600/20 to-black/90">
 
             <div class="max-w-7xl">
@@ -249,7 +249,7 @@
             </div>
         </section>
 
-        <section class="w-full px-5 flex flex-col h-auto items-center justify-center bg-gray-800/80">
+        <section class="w-full px-5 flex flex-col h-auto items-center justify-center bg-gray-800/80" id="testimonials">
             <div class="max-w-7xl py-20">
                 <div class="text-center flex flex-col gap-8">
                     <h4 class="uppercase text-xl text-purple-500 font-semibold">Testimonials</h4>
@@ -314,7 +314,7 @@
                             <img src="images/test img 3.avif" alt="customer 3" class="size-12 rounded-full">
                             <div>
                                 <h4 class="text-white font-bold">Emily Davis</h4>
-                                <p class="text-gray-400">Founded, DesignHub</p>
+                                <p class="text-gray-400">Founder, DesignHub</p>
                             </div>
                         </div>
                     </div>
@@ -326,24 +326,77 @@
             class="w-full px-5 flex flex-col h-auto items-center justify-center bg-linear-to-r from-indigo-500/80 via-purple-500/80 to-pink-500/80">
             <div class="max-w-3xl py-28 flex flex-col justify-center items-center gap-10">
                 <div class="flex flex-col items-center gap-8">
-                    <h1 class="text-center text-4xl md:text-5xl text-white font-bold">Ready to transform <br> your workflow?</h1>
-                    <p class="text-center text-white">Join 2000+ teams already using FlowApp to build better products, faster.
+                    <h1 class="text-center text-4xl md:text-5xl text-white font-bold">Ready to transform <br> your
+                        workflow?</h1>
+                    <p class="text-center text-white">Join 2000+ teams already using FlowApp to build better products,
+                        faster.
                     </p>
                 </div>
 
                 <div>
                     <div class="flex gap-5 justify-center mb-5">
-                        <button class="flex items-center bg-white rounded-lg py-4 px-5 hover:scale-105 transition-all duration-300">Start Free Trial <ion-icon name="arrow-forward-outline"
-                                class="ml-2 text-xl"></ion-icon></button>
-                        <button class="bg-white/20 backdrop-blur-xl py-4 px-5 text-white rounded-lg border-[2px] border-white/30 hover:bg-white/30 transition-all duration-300">Schedule Demo</button>
+                        <button
+                            class="flex items-center bg-white rounded-lg py-4 px-5 hover:scale-105 transition-all duration-300">Start
+                            Free Trial <ion-icon name="arrow-forward-outline" class="ml-2 text-xl"></ion-icon></button>
+                        <button
+                            class="bg-white/20 backdrop-blur-xl py-4 px-5 text-white rounded-lg border-[2px] border-white/30 hover:bg-white/30 transition-all duration-300">Schedule
+                            Demo</button>
                     </div>
-                    <p class="flex items-center gap-2 text-white">No credit card required <ion-icon name="ellipse" class="size-2 text-white"></ion-icon> 14-day free trial <ion-icon
-                            name="ellipse" class="size-2 text-white"></ion-icon> Cancel anytime</p>
+                    <p class="flex items-center gap-2 text-white">No credit card required <ion-icon name="ellipse"
+                            class="size-2 text-white"></ion-icon> 14-day free trial <ion-icon name="ellipse"
+                            class="size-2 text-white"></ion-icon> Cancel anytime</p>
                 </div>
             </div>
         </section>
     </main>
 
+    <footer class="bg-gray-900 py-10 h-auto w-full flex flex-col items-center px-5">
+        <div class="max-w-7xl">
+            <div class="grid grid-rows-2 lg:grid-rows-none grid-cols-3 lg:grid-cols-4 gap-5 ">
+                <div class="flex flex-col col-span-3 lg:col-span-1 items-center gap-5">
+                    <h3 class="text-white text-xl font-bold lg:self-start"><span class="size-12 p-2 rounded-lg mr-2 text-xl bg-gradient-to-br from-blue-400 to-purple-500 animate-pulse">⚡</span>FlowApp</h3>
+                    <p class="text-white ">Build better products faster with all-in-one platforms for modern teams.</p>
+                    <div class="lg:self-start flex gap-3">
+                        <i class="size-10 p-2 rounded-md bg-gray-400/30 text-xl text-center hover:bg-gray-400/50 transition-bg duration-300 text-white ri-twitter-x-fill"></i>
+                        <i class="size-10 p-2 rounded-md bg-gray-400/30 text-xl text-center hover:bg-gray-400/50 transition-bg duration-300 text-white ri-linkedin-fill"></i>
+                        <i class="size-10 p-2 rounded-md bg-gray-400/30 text-xl text-center hover:bg-gray-400/50 transition-bg duration-300 text-white ri-youtube-fill"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <h3 class="text-white text-xl font-bold">Product</h3>
+                    <ul class="flex flex-col gap-2 items-center">
+                        <li class="text-white">Features</li>
+                        <li class="text-white">Pricing</li>
+                        <li class="text-white">Integrations</li>
+                        <li class="text-white">Changelogs</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <h3 class="text-white text-xl font-bold">Company</h3>
+                    <ul class="flex flex-col gap-2 items-center">
+                        <li class="text-white">About</li>
+                        <li class="text-white">Blogs</li>
+                        <li class="text-white">Careers</li>
+                        <li class="text-white">Press</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-3 items-center">
+                    <h3 class="text-white text-xl font-bold">Legal</h3>
+                    <ul class="flex flex-col gap-2 items-center">
+                        <li class="text-white">Privacy</li>
+                        <li class="text-white">Ternms</li>
+                        <li class="text-white">Security</li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr class="my-10 text-gray-300/60">
+            <div class="flex flex-col lg:flex-row lg:justify-between items-center gap-5">
+                <h2 class="text-white text-xl font-bold"><span>⚡</span>FlowApp</h2>
+                <p class="text-white">&copy; 2026 FlowApp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 </body>
